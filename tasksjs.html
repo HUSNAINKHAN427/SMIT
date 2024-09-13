@@ -1,34 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // task1 Alerts
 
-         alert("wellcome to my website");
+        // alert("wellcome to my website");
 
         // task2 Variables for Strings
 
-         let userName = prompt("enter your name");  
-        let Message = "Hello, " + userName + "! Welcome to the site.";
+        // let userName = prompt("enter your name");
+        // let Message = "Hello, " + userName + "! Welcome to the site.";
 
-      
-        alert(Message);
-       // task3 Variables for Numbers
-        
-        let number1 = parseFloat(prompt("Enter the first number:"));
-        let number2 = parseFloat(prompt("Enter the second number:"));
 
-       
-        let sum = number1 + number2;
+        // alert(Message);
+        // task3 Variables for Numbers
 
-        
-        alert("The sum of your number is: " + sum);
+        // let number1 = parseFloat(prompt("Enter the first number:"));
+        // let number2 = parseFloat(prompt("Enter the second number:"));
+
+
+        // let sum = number1 + number2;
+
+
+        // alert("The sum of your number is: " + sum);
+
+        // task 4 legall and ilegall
+        // Legal variable names
+        // let Name = "husnain";
+        // let _age = 17;
+        // let $city = "mardan";
+        // let country3 = "pakistan";
+        // let totalAmount = 200;
+        // let camelCase = "camel case";
+
+        // alert(Name);
+        // alert(_age);
+        // alert($city);
+        // alert(country3);
+        // alert(totalAmount);
+        // alert(camelCase);
+
+
+        //task 5
+        //basic calcolator
+
+        // function calculator() {
+
+        //     let num1 = parseFloat(prompt("Enter the first number:"));
+        //     let num2 = parseFloat(prompt("Enter the second number:"));
+
+
+        //     let operation = prompt("Choose an operation: +, -, *, /");
+
+        //     let result;
+
+
+        //     if (operation === "+") {
+        //         result = num1 + num2;
+        //     } else if (operation === "-") {
+        //         result = num1 - num2;
+        //     } else if (operation === "*") {
+        //         result = num1 * num2;
+        //     } else if (operation === "/") {
+        //         if (num2 !== 0) {
+        //             result = num1 / num2;
+        //         } else {
+        //             alert("Division by zero is not allowed.");
+        //             return;
+        //         }
+        //     } else {
+        //         alert("Invalid operation.");
+        //         return;
+        //     }
+
+
+        //     alert("The result of " + num1 + " " + operation + " " + num2 + " is: " + result);
+        // }
+
+
+        // calculator();
+        //task6
+        //**Math Expressions: Unfamiliar Operators**
+
+        // let dividend = parseFloat(prompt("enter first num"));
+        // let divisor = parseFloat(prompt("enter second num"));
+        // let remainder = dividend % divisor;
+
+        // alert("The remainder of " + dividend + " divided by " + divisor + " is: " + remainder);
+
+        // // increment operator
+        // let number = parseFloat(prompt("enter a num to know increment and decrement  num"));
+        // alert("Initial value of number: " + number);
+        // number++;
+        // alert("Value after incrementing: " + number);
+
+        // //  decrement operator
+        // number--;
+        // alert("Value after decrementing: " + number);
+
+        //task 7 Math Expressions: Eliminating Ambiguity
+
+        // let result = (5 + 2) * 3 - 4 / 2;
+
+
+        // alert("The result of  (5 + 2) * 3 - 4 / 2 is: " + result);
+
+
+        //task 8. Concatenating Text Strings
+        // let string1 = "Hello, ";
+        // let string2 = "World!";
+        // let String = string1 + string2;
+        // alert(String);
+
+
+
+        //task  9 prompt
+
+
+        // let fullName = prompt("Please enter your name:");
+        // let Age = prompt("Please enter your age:");
+        // let data = "Hello, " + fullName + "! You are " + Age + " years old.";
+
+
+        // alert(data);
+
+        //10 if statement
+
+
+        // let number = parseFloat(prompt("Please enter a number:"));
+        // if (number > 0) {
+        //     alert("The number is positive.");
+        // } else if (number < 0) {
+        //     alert("The number is negative.");
+        // } else {
+        //     alert("The number is zero.");
+        // }
+
+        // task 11 comparision oprator
+
+        // let number1 = parseFloat(prompt("Please enter the first number:"));
+        // let number2 = parseFloat(prompt("Please enter the second number:"));
+        // if (number1 > number2) {
+        //     alert("The first number is greater than the second number.");
+        // } else if (number1 < number2) {
+        //     alert("The first number is less than the second number.");
+        // } else if (number1 === number2) {
+        //     alert("Both numbers are equal.");
+        // } else {
+        //     alert("Invalid input.");
+        // }
+
+
+
+
+        //task 12
+        // let score = prompt("Please enter your exam score:");
+
+
+        // score = Number(score);
+
+
+        // if (score >= 90 && score <= 100) {
+        //     alert("Your grade is A.");
+        // } else if (score >= 80 && score < 90) {
+        //     alert("Your grade is B.");
+        // } else if (score >= 70 && score < 80) {
+        //     alert("Your grade is C.");
+        // } else if (score >= 60 && score < 70) {
+        //     alert("Your grade is D.");
+        // } else if (score >= 0 && score < 60) {
+        //     alert("Your grade is F.");
+        // } else {
+        //     alert("Invalid score. Please enter a score between 0 and 100.");
+        // }
+
+
+        // TASK 13 testing sets of condition
+        // let age = prompt("Please enter your age:");
+        // let isStudent = prompt("Are you a student? (yes or no):").toLowerCase();
+        // age = Number(age);
+        // if (age >= 18 && age <= 25 && isStudent === "yes") {
+        //     alert("You are a student and within the age range for a student discount.");
+        // } else if (age > 25 && isStudent === "yes") {
+        //     alert("You are a student, but you do not qualify for the age-based student discount.");
+        // } else if (age >= 18 && age <= 25 && isStudent === "no") {
+        //     alert("You are eligible for an age-based discount, but not a student discount.");
+        // } else if (age < 18 && isStudent === "yes") {
+        //     alert("You are a young student and may qualify for special discounts.");
+        // } else {
+        //     alert("You are not eligible for any discounts.");
+        // }
+
+
+
+        //TASK 14 Set the correct username and password
+        // const correctUsername = "user123";
+        // const correctPassword = "password456";
+
+        // let username = prompt("Enter your username:");
+
+
+        // if (username === correctUsername) {
+
+        //     let password = prompt("Enter your password:");
+
+
+        //     if (password === correctPassword) {
+        //         alert("Welcome, " + username + "!");
+        //     } else {
+        //         alert("Incorrect password. Please try again.");
+        //     }
+        // } else {
+        //     alert("Incorrect username. Please try again.");
+        // }
+
+
+        //TASK 15
+
+        // let fruits = ["Apple", "Banana", "banana", "Mango", "Orange"];
+
+
+        // for (let i = 0; i < fruits.length; i++) {
+        //     alert(fruits[i]);
+        // }
+        //task 16
+
+        // let fruits = ['apple', 'banana', 'orange'];
+        // fruits.unshift('mango');
+        // fruits.push('grape');
+        // fruits.shift();
+        // fruits.pop();
+        // console.log(fruits);
+
+
+        // task 17
+
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // let middleIndex = Math.floor(numbers.length / 2);
+        // numbers.splice(middleIndex, 1);
+        // let insertIndex = 3;
+        // numbers.splice(insertIndex, 0, 99);
+        // let extractedPortion = numbers.slice(2, 6);
+        // console.log("Updated Array:", numbers);
+        // console.log("Extracted Portion:", extractedPortion);
+
+
+        //task 18
+
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log(i);
+        // }
+
+
+        //PART2
+        //TASK 1
+
+        // let num1 = parseFloat(prompt("Enter the first number:"));
+        // let num2 = parseFloat(prompt("Enter the second number:"));
+
+
+        // let operation = prompt("Choose an operation (+, -, *, /):");
+
+
+        // let result;
+
+        // if (operation === "+") {
+        //     result = num1 + num2;
+        // } else if (operation === "-") {
+        //     result = num1 - num2;
+        // } else if (operation === "*") {
+        //     result = num1 * num2;
+        // } else if (operation === "/") {
+        //     if (num2 !== 0) {
+        //         result = num1 / num2;
+        //     } else {
+        //         alert("Error: Division by zero is not allowed.");
+        //     }
+        // } else {
+        //     alert("Error: Invalid operation.");
+        // }
+
+        // if (result !== undefined) {
+        //     alert(`The result is: ${result}`);
+        // }
+
+        //TASK2
+
+        // let name = prompt("What is your name?");
+
+        // let favoriteColor = prompt("What is your favorite color?");
+        // alert(`Hello ${name}, I see your favorite color is ${favoriteColor}!`);
+        //TASK 3
+
+        // let number = parseInt(prompt("Enter a number:"), 10);
+
+        // if (isNaN(number)) {
+        //     alert("Please enter a valid number.");
+        // } else if (number % 2 === 0) {
+        //     alert(`${number} is an even number.`);
+        // } else {
+        //     alert(`${number} is an odd number.`);
+        // }
+
+        //TASK4
+
+        // let favoriteFruits = ['apple', 'banana', 'orange', 'grape', 'mango'];
+        // favoriteFruits.unshift('pineapple');
+        // favoriteFruits.push('strawberry');
+        // favoriteFruits.shift();
+        // favoriteFruits.pop();
+        // console.log(favoriteFruits);
+
+        //TASK 5
+        // let favoriteFruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
+        // favoriteFruits.unshift("Strawberry");
+        // favoriteFruits.push("Grapes");
+        // favoriteFruits.shift();
+        // favoriteFruits.pop();
+        // console.log(favoriteFruits);
+
+        //TASK 6
+
+        // let score = parseInt(prompt("Enter your score (0-100):"), 10);
+
+
+        // let grade;
+
+        // if (isNaN(score) || score < 0 || score > 100) {
+        //     alert("Please enter a valid score between 0 and 100.");
+        // } else if (score >= 90) {
+        //     grade = "A";
+        // } else if (score >= 80) {
+        //     grade = "B";
+        // } else if (score >= 70) {
+        //     grade = "C";
+        // } else if (score >= 60) {
+        //     grade = "D";
+        // } else {
+        //     grade = "F";
+        // }
+
+
+        // if (grade) {
+        //     alert(`Your grade is ${grade}.`);
+        // }
+
+        // TASK 7
+
+        // for (let i = 10; i >= 1; i--) {
+        //     console.log(i);
+        // }
+
+
+        //TASK 8
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // numbers.shift();
+        // numbers.pop();
+        // numbers.unshift(0);
+        // numbers.push(11);
+        // let middlePortion = numbers.slice(2, 7);
+
+
+        // console.log("Final Array:", numbers);
+
+        // console.log("Extracted Middle Portion:", middlePortion);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
+
 </html>

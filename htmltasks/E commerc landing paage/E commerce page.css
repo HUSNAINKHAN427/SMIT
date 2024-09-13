@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.related-products .card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner img {
+        height: 300px; /* Adjust for smaller screens */
+        object-fit: cover;
+    }
+
+    .related-products .card {
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
